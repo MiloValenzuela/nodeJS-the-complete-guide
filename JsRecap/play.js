@@ -1,8 +1,8 @@
-var name = "Max";
-var age = 37;
-var hasHobbies = true;
+const name = "Max";
+let age = 37;
+const hasHobbies = true;
 
-function summarizeUser(userName, userAge, userHasHobby) {
+const summarizeUser = (userName, userAge, userHasHobby) => {
     return (
         'Name is ' +
         userName +
