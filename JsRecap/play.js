@@ -1,16 +1,9 @@
-const name = "Max";
-let age = 37;
-const hasHobbies = true;
+const person = {
+    name: 'Max',
+    age: 29,
+    greet() {
+        console.log('Hi, I am ' + this.name);
+    }
+};
 
-const summarizeUser = (userName, userAge, userHasHobby) => {
-    return (
-        'Name is ' +
-        userName +
-        ', age is ' +
-        userAge + 
-        ' and the user has hobbies: ' +
-        userHasHobby
-    );
-}
-
-console.log(summarizeUser(name, age, hasHobbies));
+person.greet();
